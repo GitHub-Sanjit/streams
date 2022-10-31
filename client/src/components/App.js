@@ -10,9 +10,9 @@ import StreamShow from "./streams/StreamShow";
 const App = () => {
   return (
     <div className="ui container">
-      <Headers></Headers>
       <BrowserRouter>
         <div>
+          <Headers></Headers>
           <Route path="/" exact component={StreamList}></Route>
           <Route path="/streams/new" component={StreamCreate}></Route>
           <Route path="/streams/edit" component={StreamEdit}></Route>
